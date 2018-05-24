@@ -4,6 +4,56 @@ body {
     font-family: 'Abel', sans-serif;
 }
 
+/*hover button*/
+@keyframes slide {
+  0% {
+    background-position-x: 0%;
+  }
+  100% {
+    background-position-x: 600vw;
+  }
+}
+
+
+.button {
+  border-radius: 50px;
+  width: 20;
+  height: 7vw;
+  font-size: 3vw;
+  vertical-align: center;
+  text-align: center;
+  position: relative;
+  margin-top: 10%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #7f0000;
+  display: table;
+}
+.button:hover {
+  background: repeating-linear-gradient(-45deg, red 0%, yellow 7.14%, lime 14.28%, cyan 21.42%, cyan 28.56%, blue 35.7%, magenta 42.84%, red 50%);
+  background-size: 600vw 600vw;
+  -webkit-animation: 'slide' 10s infinite linear forwards;
+  animation-duration: 3.5s;
+}
+.button span {
+  font-weight: 500;
+  display: table-cell;
+  vertical-align: middle;
+  text-align: center;
+  color: white;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.section{
+  margin-top: 30%;
+  color: white;
+  vertical-align: center;
+  margin-bottom: 0px;
+}
+/*End of Hover Button*/
+
 #backgroundimg {
 
 }
